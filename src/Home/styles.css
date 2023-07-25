@@ -38,14 +38,9 @@
   }
   
   .container button:hover {
-    background-color: #603ed1;
+    background-color: #d13e75;
   }
-  .container h2 {
-    margin-top: 30px;
-    margin-bottom: 24px;
-    font-size: 28px;
-    color: #333;
-  }
+  
   
   
   .container ul {
@@ -59,4 +54,25 @@
     font-size: 20px;
     color: #333;
   }
+  .container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    max-width: 600px;
+  }
   
+  .container th,
+  .container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container tr:hover {
+    background-color: #f2f2f2;
+  }

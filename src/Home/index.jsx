@@ -23,10 +23,12 @@ function Home() {
       <h1>Sistema de Notificação de Interações Medicamentosas</h1>
       <input
         type="text"
-        placeholder="Digite o nome do medicamento"
+        placeholder="Nome do medicamento"
         value={medicamento}
         onChange={handleInputChange}
       />
+     
+      
       <button type="button" onClick={handlePesquisar}>
         Pesquisar
       </button>
