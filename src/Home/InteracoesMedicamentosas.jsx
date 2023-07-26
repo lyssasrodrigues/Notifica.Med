@@ -3,7 +3,6 @@ import React from 'react';
 function InteracoesMedicamentosas({ interacoes }) {
   return (
     <div>
-      
       <table>
         <thead>
           <tr>
@@ -17,11 +16,11 @@ function InteracoesMedicamentosas({ interacoes }) {
         <tbody>
           {interacoes.map((interacao, index) => (
             <tr key={index}>
-              <td>Medicamento 1</td>
-              <td>Efeito exemplo</td>
-              <td>Grau exemplo</td>
-              <td>Início exemplo</td>
-              <td>Recomendação exemplo</td>
+              <td>{interacao.medicamento}</td>
+              <td>{interacao.efeitoClinico}</td>
+              <td>{interacao.grauInteracao}</td>
+              <td>{interacao.inicioAcao}</td>
+              <td>{interacao.recomendacao}</td>
             </tr>
           ))}
         </tbody>
