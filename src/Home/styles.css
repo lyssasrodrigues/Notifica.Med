@@ -1,113 +1,153 @@
+/* src/styles.css */
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3e50; /* Azul escuro */
+  color: #fff;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #d13e75; /* Rosa */
+}
+
+/* Container principal */
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  
-  .container h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-  }
-  
-  .container input {
-    width: 300px;
-    padding: 12px;
-    margin-bottom: 16px;
-  
-    background: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .container button {
-    width: 300px;
-    padding: 12px;
-    font-weight: 700;
-  
-    background:#333;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    font-size: 16px;
-  }
-  
-  .container button:hover {
-    background-color: #333;
-  }
-  
-  
-  
-  .container ul {
-    list-style: none;
-    margin-top: 30px;
-    max-width: 400px;
-  }
-  
-  .container li {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #333;
-  }
-  .container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-    max-width: 600px;
-    font-size:15px;
-  }
-  
-  .container th,
-  .container td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .container th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .container tr:hover {
-    background-color: #f2f2f2;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 16px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    transition: color 0.2s;
-  }
-  
-  nav a:hover {
-    color: #d13e75;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2; /* Cinza claro */
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 12px;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.search-container input::placeholder {
+  color: #999; /* Cinza mais claro para texto de placeholder */
+}
+
+.search-container button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333; /* Preto */
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.2s;
+}
+
+.search-container button:hover {
+  background-color: #d13e75; /* Rosa */
+}
+
+/* Mensagem de interações medicamentosas */
+.interaction-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff; /* Branco */
+  color: #333;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.interaction-message p {
+  margin-bottom: 10px;
+}
+
+.interaction-message hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc; /* Cinza claro */
+}
+
+.interaction-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2; /* Cinza claro */
+  color: #333;
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.interaction-message p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.interaction-message p strong {
+  margin-right: 20px;
+}
+
+/* Estilos específicos para cada ícone */
+.interaction-message p .arrow-right-icon {
+  color: #d13e75; /* Rosa */
+}
+
+.interaction-message p .exclamation-icon {
+  color: #e67e22; /* Laranja */
+}
+
+.interaction-message p .check-icon {
+  color: #2ecc71; /* Verde */
+}
