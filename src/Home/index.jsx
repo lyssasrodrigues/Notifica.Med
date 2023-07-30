@@ -1,4 +1,4 @@
-// src/Home.js
+
 
 import React, { useState } from 'react';
 import './styles.css';
@@ -23,7 +23,6 @@ function Home() {
   const getInteracoesMedicamento = (medicamento) => {
     const medicamentoLowerCase = medicamento.toLowerCase();
 
-    // Simulando as respostas para o medicamento "AAS" ou "Ácido acetilsalicílico"
     if (medicamentoLowerCase === 'aas' || medicamentoLowerCase === 'ácido acetilsalicílico') {
       return [
         {

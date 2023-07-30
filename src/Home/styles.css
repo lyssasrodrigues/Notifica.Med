@@ -1,4 +1,4 @@
-/* src/styles.css */
+
 
 /* Estilos globais */
 body {
@@ -141,13 +141,13 @@ nav a:hover {
 
 /* Estilos específicos para cada ícone */
 .interaction-message p .arrow-right-icon {
-  color: #d13e75; /* Rosa */
+  color: #d13e3e; 
 }
 
 .interaction-message p .exclamation-icon {
-  color: #e67e22; /* Laranja */
+  color: #e67e22; 
 }
 
 .interaction-message p .check-icon {
-  color: #2ecc71; /* Verde */
+  color: #2ecc71;
 }
